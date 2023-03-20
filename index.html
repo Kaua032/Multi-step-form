@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Multi-stemp Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li id="info">
+                        <div class="ball">1</div>
+                        <div class="titles">
+                            <p class="title_1">STEP 1</p>
+                            <p class="title_2">YOUR INFO</p>
+                        </div>
+                    </li>
+                    <li id="plan">
+                        <div class="ball">2</div>
+                        <div class="titles">
+                            <p class="title_1">STEP 2</p>
+                            <p class="title_2">SELECT PLAN</p>
+                        </div>
+                    </li>
+                    <li id="ons">
+                        <div class="ball">3</div>
+                        <div class="titles">
+                            <p class="title_1">STEP 3</p>
+                            <p class="title_2">ADD-ONS</p>
+                        </div>
+                    </li>
+                    <li id="summary">
+                        <div class="ball">4</div>
+                        <div class="titles">
+                            <p class="title_1">STEP 4</p>
+                            <p class="title_2">SUMMARY</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="page_one">
+            <form action="">
+                <label class="label_title1" for="">Personal Info</label>
+                <label class="label_title2" for="">Please provide your name, email address, and phone number.</label>
+                <div id="first_div">
+                    <label for="">Name</label>
+                    <label for=""></label>
+                </div>
+                <input class="info_input" type="text" placeholder="e.g. Stephen King">
+                <div class="info_labels_div">
+                    <label class="info_normal_label" for="">Email Address</label>
+                    <label for=""></label>
+                </div>
+                <input class="info_input" type="email" placeholder="e.g. stephenking@gmail.com">
+                <div class="info_labels_div">
+                    <label class="info_normal_label" for="">Phone Number</label>
+                    <label for=""></label>
+                </div>
+                <input class="info_input" type="tel" placeholder="e.g. +55 ">
+                <div class="one_buttons">
+                    <button class="next_step">Next Step</button>
+                </div>
+            </form>
+        </main>
+        <main>
+            <form action="">
+                <label class="label_title1" for="">Select your plan</label>
+                <label class="label_title2" for="">You have the option of monthly or yearly biling</label>
+                <div id="options">
+                    <div>
+                        <img src="./img/icon-arcade.svg" alt="">
+                        <p class="option_title_1">Arcade</p>
+                        <p class="option_title_2">$9/mo</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-advanced.svg" alt="">
+                        <p class="option_title_1">Advanced</p>
+                        <p class="option_title_2">$12/mo</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-pro.svg" alt="">
+                        <p class="option_title_1">Pro</p>
+                        <p class="option_title_2">$15/mo</p>
+                    </div>
+                </div>
+                <div id="div_month_or_year">
+                    <p class="text_month_or_year" id="month">Monthly</p>
+                    <label class="switch" for="">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="text_month_or_year" id="year">Yearly</p>
+                </div>
+                <div class="one_buttons" style="margin-top: 5rem; justify-content: space-between; align-self: auto;">
+                    <button class="go_back" id="go_back_to_1">Go Back</button>
+                    <button class="next_step">Next Step</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
