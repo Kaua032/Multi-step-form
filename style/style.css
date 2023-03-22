@@ -197,3 +197,32 @@ div label{
     cursor: pointer;
 }
 
+/*DESIGN TOGGLE*/   
+
+#chk{
+    display: none;
+}
+.switch{
+    position: relative;
+    background-color: #04295D;
+    width: 35px;
+    height: 12px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.slider{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: all .2s ease-in-out;
+}
+
+#chk:checked ~ .switch .slider{
+    transform: translateX(20px);
+}
