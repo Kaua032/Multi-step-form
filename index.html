@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
     <title>Multi-stemp Form</title>
 </head>
 <body>
@@ -63,7 +64,7 @@
                 </div>
                 <input class="info_input" type="tel" placeholder="e.g. +55 ">
                 <div class="one_buttons">
-                    <button class="next_step">Next Step</button>
+                    <button class="next_step" id="goToTwo">Next Step</button>
                 </div>
             </form>
         </main>
@@ -102,7 +103,44 @@
                 </div>
                 <div class="one_buttons" style="margin-top: 5rem; justify-content: space-between; align-self: auto;">
                     <button class="go_back" id="go_back_to_1">Go Back</button>
-                    <button class="next_step">Next Step</button>
+                    <button class="next_step" id="go_to_3">Next Step</button>
+                </div>
+            </form>
+        </main>
+
+        <main id="page_three">
+            <form action="">
+                <label class="label_title1" for="">Pick add-ons</label>
+                <label class="label_title2" for="">Add-ons help enhance your gaming experience.</label>
+                <div id="geral_box">
+                    <div class="options_box">
+                        <input type="checkbox">
+                        <div class="text_option_box">
+                            <p class="title_1_page_three">Online service</p>
+                            <p class="title_2_page_three">Acess to multiplayer games</p>
+                        </div>
+                        <p class="price_for_time">+$1/mo</p>
+                    </div>
+                    <div class="options_box">
+                        <input type="checkbox">
+                        <div class="text_option_box">
+                            <p class="title_1_page_three">Online service</p>
+                            <p class="title_2_page_three">Acess to multiplayer games</p>
+                        </div>
+                        <p class="price_for_time">+$1/mo</p>
+                    </div>
+                    <div class="options_box">
+                        <input type="checkbox">
+                        <div class="text_option_box">
+                            <p class="title_1_page_three">Online service</p>
+                            <p class="title_2_page_three">Acess to multiplayer games</p>
+                        </div>
+                        <p class="price_for_time">+$1/mo</p>
+                    </div>
+                </div>
+                <div class="one_buttons">
+                    <button class="go_back" id="go_back_to_2">Go Back</button>
+                    <button class="next_step" id="go_to_4">Next Step</button>
                 </div>
             </form>
         </main>

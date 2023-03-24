@@ -38,6 +38,12 @@ nav{
     margin-left: 45px;
 }
 #page_one{
+    display: flex;
+}
+#page_two{
+    display: none;
+}
+#page_three{
     display: none;
 }
 ul{
@@ -126,9 +132,12 @@ div label{
     padding-left: 10px;
 }
 .one_buttons{
-    display:flex;
+    display: flex;
     align-self: flex-end;
-    margin-top: 9rem;
+    width: 100%;
+    justify-content: space-between; 
+    align-self: flex-end; 
+    height: 45%;
 }
 .next_step{
     align-self: flex-end;
@@ -187,10 +196,12 @@ div label{
 }
 .go_back{
     background: none;
+    align-self: flex-end;
     border: none;
     color: #D8D9DE;
     font-size: 1.2rem;
     font-weight: 500;
+    height: 60px;
 }
 .go_back:hover{
     color: #03295A;
@@ -225,4 +236,27 @@ div label{
 
 #chk:checked ~ .switch .slider{
     transform: translateX(20px);
+}
+
+/*DESIGN MAIN THREE*/
+
+#geral_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 3rem;
+}
+.options_box{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #4E49AD;
+    padding: 20px;
+    height:  3rem;
+    align-items: center;
+}
+.text_option_box{
+    margin-left: 5%;
+}
+.price_for_time{
+    justify-self: end;
 }
