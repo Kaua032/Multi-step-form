@@ -7,3 +7,8 @@ document.getElementById("goToTwo").addEventListener("click", (e) =>{
     mainOne.style.display = "none"
     mainTwo.style.display = "flex"
 })
+document.getElementById("go_to_3").addEventListener("click", (e)=>{
+    e.preventDefault()
+    mainTwo.style.display = "none"
+    mainThree.style.display = "flex"
+})
